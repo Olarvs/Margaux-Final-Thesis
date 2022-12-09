@@ -40,7 +40,7 @@
             <div class="col-md-6">
                 <!-- <div class="small mb-1">SKU: BST-498</div> -->
                 <h1 class="display-5 fw-bolder border-bottom border-primary pb-1"><?php echo $title ?></h1>
-                <p class="m-0"><small>By: <?php echo $author ?></small></p>
+                <!-- <p class="m-0"><small>By: <?php echo $author ?></small></p> -->
                 <div class="fs-5 mb-5">
                 &#8369; <span id="price"><?php echo number_format($inv[0]['price']) ?></span>
                 <br>
@@ -101,7 +101,7 @@
                             <?php foreach($_inv as $k=> $v): ?>
                                 <span><b>Price: </b><?php echo $v ?></span>
                             <?php endforeach; ?>
-                            <p class="m-0"><small>By: <?php echo $row['author'] ?></small></p>
+                            <!-- <p class="m-0"><small>By: <?php //echo $row['author'] ?></small></p> -->
                         </div>
                     </div>
                     <!-- Product actions-->

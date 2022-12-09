@@ -36,7 +36,7 @@ if(isset($_GET['id']) && $_GET['id'] > 0){
             </div>
             <div class="form-group">
 				<label for="price" class="control-label">Price</label>
-                <input type="number" step="any" class="form-control form" required name="price" value="<?php echo '₱'+ isset($price) ? $price : '' ?>">
+                <input type="number" step="any" class="form-control form" required name="price" value="<?php echo isset($price) ? $price : '' ?>">
             </div>
 		</form>
 	</div>

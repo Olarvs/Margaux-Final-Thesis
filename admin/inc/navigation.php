@@ -30,10 +30,18 @@
                           Dashboard
                         </p>
                       </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a href="<?php echo base_url ?>admin/?page=users" class="nav-link nav-users">
+                        <i class="nav-icon fas fa-user"></i>
+                        <p>
+                          Users
+                        </p>
+                      </a>
                     </li> 
                     <li class="nav-item dropdown">
                       <a href="<?php echo base_url ?>admin/?page=product" class="nav-link nav-product">
-                        <i class="nav-icon fas fa-plant-seedling"></i>
+                        <i class="nav-icon fas fa-seedling"></i>
                         <p>
                           Product List
                         </p>

@@ -48,23 +48,25 @@
                             <h5 class="fw-bolder"><?php echo $row['title'] ?></h5>
                             <!-- Product price-->
                             <?php foreach($inv as $k=> $v): ?>
-                                <span><b>Price: </b><?php echo $v ?></span>
+                                <span><b>Price: </b>₱<?php echo $v ?></span>
                             <?php endforeach; ?>
                         </div>
-                        <!-- <p class="m-0"><small>By: <?php 
-                        // echo $row['author'] 
+                        <!-- <p class="m-0"><small>Category: <?php 
+                        //echo $row['categories'] 
                         ?></small></p> -->
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                         <div class="text-center">
-                            <a class="btn btn-flat btn-primary "   href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
+                            <a class="btn btn-flat btn-primary " href=".?p=view_product&id=<?php echo md5($row['id']) ?>">View</a>
                         </div>
                         
                     </div>
+                    
                 </div>
             </div>
             <?php endwhile; ?>
         </div>
+      </div>
     </div>
 </section>
