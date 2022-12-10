@@ -49,7 +49,7 @@
 							<td class="text-center"><?php echo $i++; ?></td>
 							<td><?php echo date("Y-m-d H:i",strtotime($row['date_created'])) ?></td>
 							<td><?php echo $row['client'] ?></td>
-							<td class="text-right"><?php echo number_format($row['amount']) ?></td>
+							<td class="text-right">₱<?php echo number_format($row['amount']) ?></td>
 							<td class="text-center">
                                 <?php if($row['paid'] == 0): ?>
                                     <span class="badge badge-light">No</span>

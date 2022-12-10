@@ -32,7 +32,7 @@
                             <div>
                                 <p class="mb-1 mb-sm-1"><?php echo $row['title'] ?></p>
                                 
-                                <p class="mb-1 mb-sm-1"><small><b>Price:</b> <span class="price"><?php echo number_format($row['price']) ?></span></small></p>
+                                <p class="mb-1 mb-sm-1"><small><b>Price:</b> <span class="price">₱<?php echo number_format($row['price']) ?></span></small></p>
                                 <div>
                                 <div class="input-group" style="width:130px !important">
                                     <div class="input-group-prepend">
@@ -47,13 +47,13 @@
                             </div>
                         </div>
                         <div class="col text-right align-items-center d-flex justify-content-end">
-                            <h4><b class="total-amount"><?php echo number_format($row['price'] * $row['quantity']) ?></b></h4>
+                            <h4>₱<b class="total-amount"><?php echo number_format($row['price'] * $row['quantity']) ?></b></h4>
                         </div>
                     </div>
                 <?php endwhile; ?>
                 <div class="d-flex w-100 justify-content-between mb-2 py-2 border-bottom">
                     <div class="col-8 d-flex justify-content-end"><h4>Grand Total:</h4></div>
-                    <div class="col d-flex justify-content-end"><h4 id="grand-total">-</h4></div>
+                    <div class="col d-flex justify-content-end">₱<h4 id="grand-total">-</h4></div>
                 </div>
             </div>
         </div>

@@ -51,7 +51,7 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
                     <tr>
                         <th>#</th>
                         <th>Date Time</th>
-                        <th>Book</th>
+                        <th>Product</th>
                         <th>Client</th>
                         <th>QTY</th>
                         <th>Amount</th>
@@ -70,14 +70,14 @@ $date_end = isset($_GET['date_end']) ? $_GET['date_end'] :  date("Y-m-d") ;
                         <td><?php echo $row['date_created'] ?></td>
                         <td>
                             <p class="m-0"><?php echo $roww['title'] ?></p>
-                            <p class="m-0"><small>By: <?php echo $roww['author'] ?></small></p>
+                            <!-- <p class="m-0"><small>By: <?php //echo $roww['author'] ?></small></p> -->
                         </td>
                         <td>
                             <p class="m-0"><?php echo $roww['name'] ?></p>
                             <p class="m-0"><small>Email: <?php echo $roww['email'] ?></small></p>
                         </td>
                         <td class="text-center"><?php echo $roww['quantity'] ?></td>
-                        <td class="text-right"><?php echo number_format($roww['quantity'] * $roww['price']) ?></td>
+                        <td class="text-right">₱<?php echo number_format($roww['quantity'] * $roww['price']) ?></td>
                     </tr>
                     <?php endwhile; ?>
                     <?php endwhile; ?>

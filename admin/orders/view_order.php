@@ -58,8 +58,8 @@ if($order->num_rows > 0){
                             <p class="m-0"><small>Author: <?php echo $row['author']?></small></p>
                            
                         </td>
-                        <td class="text-right"><?php echo number_format($row['price']) ?></td>
-                        <td class="text-right"><?php echo number_format($row['price'] * $row['quantity']) ?></td>
+                        <td class="text-right">₱<?php echo number_format($row['price']) ?></td>
+                        <td class="text-right">₱<?php echo number_format($row['price'] * $row['quantity']) ?></td>
                     </tr>
                     <?php endwhile; ?>
                 </tbody>

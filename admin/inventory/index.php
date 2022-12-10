@@ -48,7 +48,7 @@
 								<p class="m-0"><small><b></b> <?php echo $row['product'] ?></small></p>
 								<!-- <p class="m-0 truncate"><b>Author:</b> <?php //echo $row['author'] ?></p> -->
 							</td>
-							<td class="text-right"><?php echo ($row['price']) ?></td>
+							<td class="text-right">₱<?php echo ($row['price']) ?></td>
 							<td class="text-right"><?php echo $avail ?></td>
 							<td align="center">
 								 <button type="button" class="btn btn-flat btn-default btn-sm dropdown-toggle dropdown-icon" data-toggle="dropdown">
